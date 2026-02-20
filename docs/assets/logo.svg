@@ -1,0 +1,21 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <title>IJ Logo</title>
+    <defs>
+        <polygon id="cube-top" points="0,10 20,0 40,10 20,20"/>
+        <polygon id="cube-left" points="0,10 20,20 20,40 0,30"/>
+        <polygon id="cube-right" points="20,20 40,10 40,30 20,40"/>
+    </defs>
+    <!-- Letter I - Green -->
+    <g transform="translate(8,15)">
+        <use href="#cube-top" fill="#5ff26b"/><use href="#cube-left" fill="#0cbe3b"/><use href="#cube-right" fill="#98ff9c"/>
+        <g transform="translate(0,20)"><use href="#cube-top" fill="#5ff26b"/><use href="#cube-left" fill="#0cbe3b"/><use href="#cube-right" fill="#98ff9c"/></g>
+        <g transform="translate(0,40)"><use href="#cube-top" fill="#5ff26b"/><use href="#cube-left" fill="#0cbe3b"/><use href="#cube-right" fill="#98ff9c"/></g>
+    </g>
+    <!-- Letter J - Purple -->
+    <g transform="translate(52,15)">
+        <use href="#cube-top" fill="#af67ff"/><use href="#cube-left" fill="#7b38cb"/><use href="#cube-right" fill="#e497ff"/>
+        <g transform="translate(0,20)"><use href="#cube-top" fill="#af67ff"/><use href="#cube-left" fill="#7b38cb"/><use href="#cube-right" fill="#e497ff"/></g>
+        <g transform="translate(0,40)"><use href="#cube-top" fill="#af67ff"/><use href="#cube-left" fill="#7b38cb"/><use href="#cube-right" fill="#e497ff"/></g>
+        <g transform="translate(-20,50)"><use href="#cube-top" fill="#af67ff"/><use href="#cube-left" fill="#7b38cb"/><use href="#cube-right" fill="#e497ff"/></g>
+    </g>
+</svg>

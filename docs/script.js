@@ -548,29 +548,29 @@ class PartyHatExplosion {
     triggerExplosion() {
         // Check if user prefers reduced motion
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const logoElement = document.querySelector('#main-header .header-logo img') || document.querySelector('#main-header svg');
+
         if (prefersReducedMotion) {
             // Just do a simple pulse for users who prefer reduced motion
-            const logoSvg = document.querySelector('#main-header svg');
-            if (logoSvg) {
-                logoSvg.classList.add('logo-party-pulse');
+            if (logoElement) {
+                logoElement.classList.add('logo-party-pulse');
                 setTimeout(() => {
-                    logoSvg.classList.remove('logo-party-pulse');
+                    logoElement.classList.remove('logo-party-pulse');
                 }, 600);
             }
             return;
         }
-        
+
         // Get logo position for explosion origin
-        const logoSvg = document.querySelector('#main-header svg');
-        if (!logoSvg) return;
-        
-        const logoRect = logoSvg.getBoundingClientRect();
+        if (!logoElement) return;
+
+        const logoRect = logoElement.getBoundingClientRect();
         const centerX = logoRect.left + logoRect.width / 2;
         const centerY = logoRect.top + logoRect.height / 2;
         const explosionId = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
-        
+
         // Add pulse animation to logo
-        logoSvg.classList.add('logo-party-pulse');
+        logoElement.classList.add('logo-party-pulse');
         
         // Create party hats explosion
         this.createPartyHats(centerX, centerY, explosionId);
@@ -580,7 +580,7 @@ class PartyHatExplosion {
         
         // Clean up after animation
         setTimeout(() => {
-            logoSvg.classList.remove('logo-party-pulse');
+            logoElement.classList.remove('logo-party-pulse');
             // Clean up any remaining elements for this explosion only
             this.cleanupExplosionElements(explosionId);
         }, 2500);

@@ -3,6 +3,9 @@
 ## 2026
 
 <div class="publication-card">
+    <div class="publication-image">
+        <img src="assets/publications/2026_fun_ddps_arch.png" alt="Function-Space Decoupled Diffusion architecture" />
+    </div>
     <div class="publication-content">
         <h3 class="publication-title">
             <a href="https://arxiv.org/abs/2602.12274" class="publication-link">
@@ -21,6 +24,9 @@
 </div>
 
 <div class="publication-card">
+    <div class="publication-image">
+        <img src="assets/publications/2026_apt_architecture.png" alt="Adaptive Physics Transformer architecture" />
+    </div>
     <div class="publication-content">
         <h3 class="publication-title">
             <a href="https://arxiv.org/abs/2602.11208" class="publication-link">
@@ -41,6 +47,9 @@
 ## 2024
 
 <div class="publication-card">
+    <div class="publication-image">
+        <img src="assets/publications/2024_mgn_lstm.png" alt="GNN CO2 plume migration" />
+    </div>
     <div class="publication-content">
         <h3 class="publication-title">
             <a href="https://arxiv.org/abs/2306.09648" class="publication-link">
@@ -61,6 +70,9 @@
 ## 2022
 
 <div class="publication-card">
+    <div class="publication-image">
+        <img src="assets/publications/2022_geo.png" alt="Flow-Geomechanics surrogate model" />
+    </div>
     <div class="publication-content">
         <h3 class="publication-title">
             <a href="https://arxiv.org/abs/2105.01334" class="publication-link">

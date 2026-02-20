@@ -17,7 +17,9 @@ docs/
 └── assets/
     ├── profile.jpg              # Profile photo
     ├── favicon.ico              # Browser tab icon
-    └── Resume_Isaac_Ju_Beta.pdf # Downloadable CV
+    ├── logo.svg                 # IJ isometric logo
+    ├── Resume_Isaac_Ju_Beta.pdf # Downloadable CV
+    └── publications/            # Publication thumbnail images (PNG)
 ```
 
 ### Local Development
@@ -32,6 +34,9 @@ python -m http.server 8000 -d docs/
 Edit `docs/publications.md` and add a new publication card:
 ```html
 <div class="publication-card">
+    <div class="publication-image">
+        <img src="assets/publications/PAPER_ID.png" alt="Paper thumbnail" />
+    </div>
     <div class="publication-content">
         <h3 class="publication-title">
             <a href="PAPER_URL" class="publication-link">Paper Title</a>
@@ -47,6 +52,16 @@ Edit `docs/publications.md` and add a new publication card:
     </div>
 </div>
 ```
+
+### Publication Images
+**IMPORTANT: DO NOT generate or create publication thumbnail images programmatically.**
+
+Publication images are provided by the user as PNG files. Place them in:
+```
+docs/assets/publications/
+```
+
+Naming convention: Use descriptive names like `diffusion-ccs.png`, `transformer-energy.png`, `gnn-co2.png`, etc.
 
 ### Adding News
 Edit `docs/news.md`:
